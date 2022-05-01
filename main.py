@@ -8,17 +8,16 @@ def lambdafunc(n):
     list.append(f(a))
  print(sum(list))
 
-n=int(input("Please enter a n integer: "))
+n=int(input("Please enter an integer: "))
 lambdafunc(n)
 
 #2
 def func2(n):
-    """The function calculates and prints the result of the equation using a recursive function"""
     if n==0:
         return 1
     else:
         return (((n/(n+2))-10)*func2(n-1))
 
-n=int(input("Please enter a number: "))
+n=int(input("Please enter an integer: "))
 print(func2(n))
 print(func2.__doc__)
